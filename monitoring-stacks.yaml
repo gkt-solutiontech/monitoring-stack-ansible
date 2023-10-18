@@ -1,0 +1,10 @@
+- name: Install monitoring tool
+  hosts: app
+  become: yes
+  roles:
+  - prometheus
+- name: Install agent monitors
+  hosts: all
+  become: yes
+  roles:
+  - node-exporter
