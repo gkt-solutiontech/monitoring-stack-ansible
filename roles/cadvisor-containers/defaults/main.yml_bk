@@ -1,0 +1,23 @@
+---
+# Version
+cadvisor_version: v0.47.2
+cadvisor_version_amd: v0.47.2-linux-arm
+
+# Cadvisor source path if offline
+cadvisor_binary_local_dir: ""
+
+# SHA256 checksum
+cadvisor_checksum: >-
+  47258fa2ca6227d230131c74d9e73865e81174b7f5a8515baea6a87097b8b756
+
+# Listen port
+cadvisor_port: 9092
+
+# Base cadvisor url
+cadvisor_url: https://github.com/google/cadvisor/releases/download/
+
+# Download url
+cadvisor_download: "{{ cadvisor_url }}/{{ cadvisor_version }}/cadvisor-{{cadvisor_version_amd}}"
+
+# Extra runtime options
+cadvisor_runtime_options: ""
