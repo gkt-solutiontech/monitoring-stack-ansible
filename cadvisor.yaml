@@ -1,8 +1,0 @@
-- hosts: 'all'
-  roles:
-    - role: wangsha.docker-influxdb
-    - role: wangsha.docker-cadvisor
-      become: true
-      docker_cadvisor_links:
-        - "influxdb:influxdb"
-      docker_cadvisor_command: "-storage_driver=influxdb -storage_driver_db=cadvisor -storage_driver_host=influxdb:8086"
